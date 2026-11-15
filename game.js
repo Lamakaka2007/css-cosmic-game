@@ -15,15 +15,14 @@ const levels = [
   },
   {
     title: 'Level 3: A shorter rule',
-    instruction: 'Use the grid-area shorthand to place the mouse on row 2, column 5, next to the cheese.',
+    instruction: 'Use the grid-area shorthand to place the mouse on row 2, column 4, next to the cheese.',
     starter: '/* grid-area is: row-start / column-start */\n.mouse {\n  grid-area: 2 / 1;\n}',
-    target: { column: 5, row: 2 },
+    target: { column: 4, row: 2 },
     lesson: 'The grid-area shorthand can set a grid item’s row and column in one declaration: row-start / column-start.'
   }
 ];
 
 const editor = document.querySelector('#code-editor');
-const room = document.querySelector('#room');
 const status = document.querySelector('#status');
 const styleTag = document.createElement('style');
 styleTag.id = 'player-styles';
