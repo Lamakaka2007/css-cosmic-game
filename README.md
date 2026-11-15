@@ -1,31 +1,41 @@
-# Mouse & Cheese
+<div align="center">
 
-Mouse & Cheese is a browser-based learning game concept that helps beginners practise HTML and CSS through small coding challenges. Players guide a mouse through rooms, avoid cats and obstacles, and reach cheese by changing code.
+# 🐭 Mouse & Cheese 🧀
 
-This repository contains the first playable prototype. It focuses on CSS Grid so the team can learn how the game scene, editor, and level checks fit together before adding more topics.
+### A small coding game for learning CSS through play
 
-## Run locally
+![Status](https://img.shields.io/badge/status-planning-f2c14e?style=flat-square)
+![Focus](https://img.shields.io/badge/first%20goal-CSS-6c9bd2?style=flat-square)
 
-Open `index.html` in a modern browser. No build tools or server are required for this prototype.
+</div>
 
-## Prototype features
+## 💡 The idea
 
-- Three beginner CSS Grid challenges.
-- An in-game CSS editor with starter code.
-- A live scene that updates when CSS is applied.
-- Level checks with hints and a reset button.
-- Responsive layout and English interface text.
+Create a simple game where players help a mouse reach the cheese by solving CSS challenges. The first goal is a **CSS version of the game**. If time allows, we may add HTML levels later.
 
-## Planned direction
+## 🎓 What we want to learn
 
-The longer-term project can include HTML challenges for creating and nesting scene elements, more CSS topics such as Flexbox and `repeat()`, additional levels, and a Java backend with Spring Boot and Thymeleaf if the team needs accounts or server-managed progress. The browser prototype deliberately keeps its first version small and easy to run.
+- How CSS selectors and rules change elements on a page.
+- How to arrange items with CSS layout tools such as Grid and Flexbox.
+- How to connect a visual result to the code that created it.
+- How to plan, build, and present a small web project as a team.
 
-## Technologies
+## 🧰 Planned technologies
 
-- HTML for the page and game scene.
-- CSS for layout and appearance.
-- Vanilla JavaScript for the editor, level data, and checks.
+- **CSS** — the main learning topic and the focus of the game challenges.
+- **JavaScript** — simple interactions, level checks, and feedback.
+- **Java + Spring Boot** — the planned server-side framework and language.
+- **Thymeleaf** — a possible way to connect Java pages with the web interface.
+- **HTML levels** — an optional extension if the team has enough time.
 
-## Team workflow
+## 🗺️ First milestone
 
-The project is intended for a small student team. A practical split is: game and level logic, interface and styling, and Java/backend research or documentation. Coordinate changes through GitHub branches and pull requests.
+Plan and build the core CSS game experience: a room, a mouse, cheese, and short challenges that teach CSS step by step.
+
+---
+
+<div align="center">
+
+**Learn a little CSS. Help the mouse. Find the cheese.**
+
+</div>
