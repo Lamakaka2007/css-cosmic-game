@@ -1,41 +1,67 @@
 <div align="center">
 
-# 🐭 Mouse & Cheese 🧀
+# 🚀 CSS Space Game
 
-### A small coding game for learning CSS through play
+### Learn CSS by guiding a space crew through coding challenges
 
-![Status](https://img.shields.io/badge/status-planning-f2c14e?style=flat-square)
-![Focus](https://img.shields.io/badge/first%20goal-CSS-6c9bd2?style=flat-square)
+![Status](https://img.shields.io/badge/status-playable%20prototype-3a9b68?style=flat-square)
+![Levels](https://img.shields.io/badge/levels-10-6c9bd2?style=flat-square)
+![Java](https://img.shields.io/badge/Java-17-ed8b00?style=flat-square)
 
 </div>
 
-## 💡 The idea
+## 🎮 About
 
-Create a simple game where players help a mouse reach the cheese by solving CSS challenges. The first goal is a **CSS version of the game**. If time allows, we may add HTML levels later.
+CSS Space Game is a small browser game for learning CSS through hands-on challenges. Players write CSS in the in-game editor and see how their code changes the formations on the board.
 
-## 🎓 What we want to learn
+The first milestone is a complete set of 10 CSS levels. The project is educational: it helps us practice CSS layout and learn how a small web application is built and developed as a team.
 
-- How CSS selectors and rules change elements on a page.
-- How to arrange items with CSS layout tools such as Grid and Flexbox.
-- How to connect a visual result to the code that created it.
-- How to plan, build, and present a small web project as a team.
+## 🧠 What we learn
 
-## 🧰 Planned technologies
+- Arrange elements with **CSS Grid** and **Flexbox**.
+- Practice selectors, colors, spacing, and alignment.
+- Connect CSS code to visible results and reason about layout behavior.
+- Build a small web project with a Java backend and a browser interface.
+- Collaborate on a shared project and prepare it for visual design work.
 
-- **CSS** — the main learning topic and the focus of the game challenges.
-- **JavaScript** — simple interactions, level checks, and feedback.
-- **Java + Spring Boot** — the planned server-side framework and language.
-- **Thymeleaf** — a possible way to connect Java pages with the web interface.
-- **HTML levels** — an optional extension if the team has enough time.
+## ✨ Current features
 
-## 🗺️ First milestone
+- 10 playable CSS levels.
+- In-game CSS editor with **Apply CSS** and **Check level** actions.
+- Level list with locked, available, and completed states.
+- Progress saved in the current browser with `localStorage`.
+- Optional hint and a learning goal for every level.
 
-Plan and build the core CSS game experience: a room, a mouse, cheese, and short challenges that teach CSS step by step.
+## 🛠️ Technologies
+
+- **Java 17** and **Spring Boot** — application backend.
+- **Thymeleaf** — server-rendered page template.
+- **HTML**, **CSS**, and **JavaScript** — game interface and interactions.
+- **Maven** — project build tool.
+- **localStorage** — browser-side progress storage.
+
+## ▶️ Run locally
+
+1. Open the project in IntelliJ IDEA.
+2. Run `CssSimpleGameApplication`, or run the Maven wrapper:
+
+   ```powershell
+   .\mvnw.cmd spring-boot:run
+   ```
+
+3. Open [http://localhost:8081](http://localhost:8081).
+
+## 🗺️ Roadmap
+
+1. Share the playable 10-level prototype with the team.
+2. Add the visual design, styling, and effects.
+3. Continue with levels 11, 12, and more.
+4. Consider optional HTML-focused challenges later.
 
 ---
 
 <div align="center">
 
-**Learn a little CSS. Help the mouse. Find the cheese.**
+**Write CSS. Shape the formation. Explore the web.**
 
 </div>

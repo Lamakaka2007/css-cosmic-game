@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: css-simple-game
+server:
+  port: 8081

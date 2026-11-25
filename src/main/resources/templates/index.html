@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Space Game</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="game-layout">
+    <section class="game-panel" aria-label="Game board">
+        <div class="board">
+            <div class="ship"></div>
+            <div class="target"
+                 th:attr="data-column=${targetColumn},data-row=${targetRow}">
+            </div>
+
+            <div class="formation">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+            </div>
+        </div>
+        <nav class="progress-panel" aria-label="Level progress">
+            <h2>Mission progress</h2>
+            <p id="progress-text">Completed: 0 / 10</p>
+            <ol id="level-list" class="level-list"></ol>
+        </nav>
+    </section>
+
+    <section class="level-panel">
+        <div class="instructions">
+            <h1 th:text="${levelTitle}">Level 1: First Flight</h1>
+            <p th:text="${instruction}">Level instructions appear here.</p>
+        </div>
+
+        <div class="editor-panel">
+            <h2>Your CSS</h2>
+            <textarea id="code-editor" rows="7"
+                      spellcheck="false"
+                      th:text="${starterCode}">.ship {
+    grid-column: 1;
+    grid-row: 1;
+}</textarea>
+
+            <div class="editor-buttons">
+                <button id="apply-button" type="button">Apply CSS</button>
+                <button id="check-button" type="button">Check level</button>
+                <button id="hint-button" type="button">Show hint</button>
+            </div>
+            <p id="hint-text" class="hint-text" role="status" hidden></p>
+
+            <p id="feedback" role="status">
+                Change the CSS to reach the target.
+            </p>
+
+        </div>
+        <aside class="skill-card">
+            <h2>What you learn</h2>
+            <p id="skill-text"></p>
+        </aside>
+    </section>
+</main>
+
+<script src="/game.js"></script>
+</body>
+</html>
